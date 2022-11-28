@@ -5,11 +5,13 @@ import { AgGridModule } from 'ag-grid-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SortingComponent } from './components/sorting/sorting.component';
+import { FilteringComponent } from './components/filtering/filtering.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SortingComponent
+    SortingComponent,
+    FilteringComponent
   ],
   imports: [
     BrowserModule,
