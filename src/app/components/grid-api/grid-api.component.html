@@ -1,0 +1,20 @@
+<div>
+    <ag-grid-angular
+    #agGrid
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">    
+    (gridReady)="onGridReady($event)"   
+    </ag-grid-angular>
+    <p>
+        <button class="btn btn-primary btn-sm m-2" (click)="agGrid.api.selectAll()">Seselect All</button>
+        <button class="btn btn-primary btn-sm" (click)="agGrid.api.deselectAll()">Deselect All</button>
+        <button class="btn btn-primary btn-sm m-2" (click)="agGrid.api.exportDataAsCsv">Export to CSV</button>
+        <button class="btn btn-primary btn-sm mr-2" (click)="onSortByNameAndPrice('asc')">
+           Sort Name &amp; Price Ascending
+        </button>
+        <button class="btn btn-primary btn-sm m-2" (click)="onSortByNameAndPrice('desc')">
+           Sort Name &amp; Price Descending
+        </button>
+    </p>
+</div>

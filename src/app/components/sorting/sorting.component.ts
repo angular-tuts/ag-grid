@@ -27,7 +27,7 @@ rowData: Array<{[key: string]: string | number | object}> = data.customers;
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.rowData[0])
+    
   }
 
 }

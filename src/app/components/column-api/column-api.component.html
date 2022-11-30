@@ -1,0 +1,13 @@
+<div>
+    <ag-grid-angular
+    #agGrid
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">    
+    (gridReady)="onGridReady($event)"   
+    </ag-grid-angular>
+    <p>
+        <button class="btn btn-primary btn-sm m-2" (click)="agGrid.api.selectAll()">Seselect All</button>
+       
+    </p>
+</div>
